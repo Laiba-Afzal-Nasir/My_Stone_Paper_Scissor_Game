@@ -1,0 +1,104 @@
+* {
+    margin : 0px ;
+    padding: 0px;
+    text-align: center;
+}
+
+h2 {
+    height: 5rem ;
+    background-color: #000138;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+    margin-top: 5rem;
+    
+    
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #000138;
+}
+
+
+.choice {
+    height: 110px;
+    width: 110px;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+    /* Score board */
+ 
+    
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 5rem ;
+    font-size: 1rem;
+    margin-top: 5rem;
+}
+
+
+#userScore , #compScore {
+    font-size: 3rem;
+}
+
+
+/* message container*/
+
+
+.msg_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+#msg {
+    background-color: #000138;
+    color: #ffffff;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+        /* media queries */
+
+@media(max-width :768px){
+    .heading h2,
+    .choices ,
+    .choice,
+    .score-board user,
+    .score-board comp,
+    .score-board p ,
+    .msg_container #msg,{
+        
+        float:none;
+    text-align:center;
+    width:100%;
+    }    
+}
